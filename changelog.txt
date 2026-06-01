@@ -1,8 +1,0 @@
-──────────────────────────────────────────
-  Versión 1.1
-──────────────────────────────────────────
-  · Corregidos los iconos en ventanas de Guía, Mapa y Banderas
-  · Corregido el color de barra de título en ventana de Banderas
-  · Corregido el Escape al cancelar la captura de región
-  · Corregido el acceso a Tesseract embebido
-
