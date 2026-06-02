@@ -1,3 +1,29 @@
+=====================================================================
+  AriaBot — Historial de cambios
+=====================================================================
+
+──────────────────────────────────────────
+  Versión 1.2
+──────────────────────────────────────────
+  · Añadido el mapa clásico
+  · Buscador de salas en el Mapa: escribe cualquier nombre
+    y el mapa hace zoom y centra en esa sala automáticamente
+  · Barra de búsqueda integrada en la cabecera del mapa
+  · Navegación entre resultados múltiples con botones ‹ ›
+  · Búsqueda sin tildes (sotano = sótano)
+  · Zoom inicial del mapa al 120% centrado en la ventana
+  · Reducido el lag al navegar por el mapa
+  · Generador de Banderas: eliminado panel lateral redundante,
+    los 500 resultados ahora ocupan toda la ventana y se centran
+  · Generador de Banderas: corregido el scroll con la rueda del ratón
+    sobre los resultados
+  · Generador de Banderas: las zonas IZQ, NICK y DCHO del ensamblador
+    son ahora editables directamente con el teclado
+  · Generador de Banderas: añadido campo EDITAR bajo el preview para
+    modificar el código completo de la bandera en tiempo real
+  · Generador de Banderas: eliminados los selectores COLOR 1/2/3
+    (redundantes con el filtrado por tipo)
+
 ──────────────────────────────────────────
   Versión 1.1
 ──────────────────────────────────────────
@@ -5,3 +31,20 @@
   · Corregido el color de barra de título en ventana de Banderas
   · Corregido el Escape al cancelar la captura de región
   · Corregido el acceso a Tesseract embebido
+
+──────────────────────────────────────────
+  Versión 1.0
+──────────────────────────────────────────
+  · Primera versión pública
+  · Autoclick continuo
+  · Grabación y reproducción de secuencias
+  · Guardia automática con detección de nivel
+  · Loop de evasión AFK
+  · Captura de imágenes para verificación
+  · Generador de Banderas integrado
+  · Guía de La Prisión integrada
+  · Mapa de La Prisión integrado
+  · Teclas rápidas configurables (F4–F12 por defecto)
+  · Sistema de actualizaciones automáticas
+
+=====================================================================
