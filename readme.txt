@@ -37,7 +37,8 @@ INSTALACIÓN
 
 El programa crea automáticamente en su carpeta de instalación:
   · Secuencias.json  → guarda tus secuencias grabadas
-  · hotkeys.json     → guarda tu configuración de teclas rápidas y tema
+  · hotkeys.json     → guarda tu configuración de teclas rápidas
+  · settings.json    → guarda tu configuración de idioma
   · templates\       → carpeta con las imágenes capturadas para secuencias
   · changelog.txt    → historial de cambios (se descarga al actualizar)
   · _update.bat      → archivo temporal que aparece y desaparece durante
@@ -52,7 +53,7 @@ La ventana se divide en dos zonas:
   · Estado en tiempo real de cada función activa.
   · Leyenda de teclas rápidas configuradas.
   · Acceso rápido a Banderas, Guía y Mapa.
-  · Botón ⚙ Opciones para configurar las teclas.
+  · Botón ⚙ Opciones para configurar las teclas y el idioma.
 
   PANEL DERECHO
   · Configuración general (intervalo de autoclick, grabación).
@@ -156,6 +157,21 @@ IMPORTANTE: las teclas asignadas a acciones de AriaBot quedan exentas
 de grabarse en las secuencias, así no interfieren con la automatización.
 
 
+CAMBIAR IDIOMA (⚙ Opciones)
+─────────────────────────────
+AriaBot está disponible en Español e Inglés. Para cambiar el idioma:
+
+1. Haz clic en el botón ⚙ Opciones del panel izquierdo.
+2. En la sección IDIOMA / LANGUAGE, selecciona ES o EN.
+3. Haz clic en "Guardar y Aplicar".
+4. Aparecerá un aviso indicando que es necesario reiniciar.
+5. Pulsa "Reiniciar ahora" para aplicar el cambio inmediatamente,
+   o "Reiniciar más tarde" para hacerlo en el próximo arranque.
+
+El idioma elegido queda guardado en settings.json y se aplica
+automáticamente cada vez que arrancas el programa.
+
+
 PLATAFORMA CLOUD
 ─────────────────
 AriaBot incluye integración con un servidor para compartir y descargar
@@ -184,7 +200,8 @@ ARCHIVOS Y CARPETAS GENERADOS
 Todos los archivos se crean en la misma carpeta donde está el .exe:
 
   Secuencias.json   → secuencias grabadas (copia de seguridad recomendada)
-  hotkeys.json      → configuración de teclas rápidas y preferencias
+  hotkeys.json      → configuración de teclas rápidas
+  settings.json     → configuración de idioma
   templates\        → imágenes capturadas para verificación en secuencias
   Mapa.png          → imagen del mapa (se actualiza automáticamente)
   changelog.txt     → se crea/actualiza al recibir una actualización
@@ -245,6 +262,10 @@ R: En el archivo Secuencias.json dentro de la carpeta de instalación.
 P: ¿Puedo cambiar la carpeta de instalación?
 R: Sí, durante la instalación con AriaBot_Setup.exe puedes elegir
    cualquier carpeta. El programa funcionará igual en cualquier ruta.
+
+P: ¿Cómo cambio el idioma?
+R: En el botón ⚙ Opciones del panel izquierdo, sección IDIOMA /
+   LANGUAGE. Selecciona ES o EN, guarda y reinicia cuando te lo pida.
 
 
 CRÉDITOS

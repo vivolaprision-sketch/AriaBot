@@ -3,6 +3,13 @@
 =====================================================================
 
 ──────────────────────────────────────────
+  Versión 1.3
+──────────────────────────────────────────
+  · Añadido idioma Inglés
+  · Selector de idioma en la ventana de Opciones (⚙)
+  · Corregidos los iconos en ventanas de Opciones y Plataforma Cloud
+
+──────────────────────────────────────────
   Versión 1.2
 ──────────────────────────────────────────
   · Añadido el mapa clásico
