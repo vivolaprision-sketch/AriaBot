@@ -1,0 +1,111 @@
+=====================================================================
+  AriaBot — Historial de cambios
+=====================================================================
+──────────────────────────────────────────
+  Versión 1.5
+──────────────────────────────────────────
+  · Añadido idioma Alemán
+  · Añadido idioma Ruso
+  · Implementada restricción de instancia única para el ejecutable principal
+  · Restricción de instancia única para ventanas de "Opciones" y "Contacto"
+  · Ventanas activadas por Hotkeys (incluyendo Banderas) forzadas a primer plano (Always on Top)
+  · Lógica de actualización mejorada: omite descarga si la versión del servidor es anterior a la instalada
+  · Corregido bug crítico de bloqueo (hang) en el Generador de Banderas al usar "Colorear" con tres variantes
+  · Añadido ReadmeDE.txt y documentación actualizada
+  · Añadido ReadmeRU.txt y documentación actualizada
+  · Modificado el sistema de banderas para que se muestren mas rápido y limpias además de corrección de bugs
+  · Ahora deberían aparecer los readme en distintos idiomas correctamente en la carpeta
+
+──────────────────────────────────────────
+  Versión 1.4
+──────────────────────────────────────────
+  · Añadido idioma Francés
+  · Añadido idioma Italiano
+  · Añadido botón Instrucciones en el panel lateral: abre la guía
+    de usuario en el idioma activo del programa
+  · Eliminado el botón Detener Operaciones del panel lateral
+  · Corrección de bugs
+  · El sistema de actualización descarga ahora todos los archivos
+    de guía de usuario (readme en los 4 idiomas)
+  · Generador de Banderas: ampliados los modos estéticos de 11 a 20,
+    añadidos Kawaii, Yakuza, Vaporwave, Dark Academia, Cottagecore,
+    Y2K, Grunge, Dreamcore y Pirata
+  · Generador de Banderas: el filtro de tipo ocupa ahora dos filas
+    para acomodar los nuevos modos
+  · Generador de Banderas: botón único de generar sustituido por
+    tres botones de cantidad (▶100, ▶200, ▶500, ▶1000)
+  · Generador de Banderas: eliminado el preview en vivo (barra
+    superior); el canvas de previsualización se mantiene interno
+  · Generador de Banderas: botón "Editar" del ensamblador renombrado
+    a "Colorear"
+  · Generador de Banderas: el generador evita ahora variantes
+    visualmente duplicadas mediante control de unicidad por tipo
+  · Generador de Banderas: aumentado el pool de variantes de nick
+    para mejorar la diversidad de resultados
+  · Configuración General rediseñada: el slider genérico de intervalo
+    se sustituye por controles independientes y más precisos
+  · Nuevo campo Intervalo Autoclick (s): casilla de texto donde se
+    escribe directamente el intervalo en segundos para el autoclick
+  · Nueva barra Velocidad de desplazamiento del mouse en secuencias:
+    controla la velocidad de movimiento del ratón durante la ejecución
+    de secuencias; centrada por defecto (velocidad estándar), izquierda
+    más lento, derecha más rápido
+  · Nuevo checkbox Secuencia one loop: si está marcado, la secuencia
+    activa ejecuta un único ciclo completo y se detiene sola; sin marcar
+    funciona en bucle continuo como siempre
+  · Botón Añadir Pausa Estática movido al pie de la card de secuencias,
+    junto al botón Ejecutar Secuencia Activa
+  · Las notificaciones flotantes ya no muestran la tecla rápida entre
+    paréntesis; muestran únicamente el nombre de la acción
+
+──────────────────────────────────────────
+  Versión 1.3
+──────────────────────────────────────────
+  · Añadido idioma Inglés
+  · Selector de idioma en la ventana de Opciones (⚙)
+  · Corregidos los iconos en ventanas de Opciones y Plataforma Cloud
+
+──────────────────────────────────────────
+  Versión 1.2
+──────────────────────────────────────────
+  · Añadido el mapa clásico
+  · Buscador de salas en el Mapa: escribe cualquier nombre
+    y el mapa hace zoom y centra en esa sala automáticamente
+  · Barra de búsqueda integrada en la cabecera del mapa
+  · Navegación entre resultados múltiples con botones ‹ ›
+  · Búsqueda sin tildes (sotano = sótano)
+  · Zoom inicial del mapa al 120% centrado en la ventana
+  · Reducido el lag al navegar por el mapa
+  · Generador de Banderas: eliminado panel lateral redundante,
+    los 500 resultados ahora ocupan toda la ventana y se centran
+  · Generador de Banderas: corregido el scroll con la rueda del ratón
+    sobre los resultados
+  · Generador de Banderas: las zonas IZQ, NICK y DCHO del ensamblador
+    son ahora editables directamente con el teclado
+  · Generador de Banderas: añadido campo EDITAR bajo el preview para
+    modificar el código completo de la bandera en tiempo real
+  · Generador de Banderas: eliminados los selectores COLOR 1/2/3
+    (redundantes con el filtrado por tipo)
+
+──────────────────────────────────────────
+  Versión 1.1
+──────────────────────────────────────────
+  · Corregidos los iconos en ventanas de Guía, Mapa y Banderas
+  · Corregido el color de barra de título en ventana de Banderas
+  · Corregido el Escape al cancelar la captura de región
+  · Corregido el acceso a Tesseract embebido
+
+──────────────────────────────────────────
+  Versión 1.0
+──────────────────────────────────────────
+  · Primera versión pública
+  · Autoclick continuo
+  · Grabación y reproducción de secuencias
+  · Guardia automática con detección de nivel
+  · Loop de evasión AFK
+  · Captura de imágenes para verificación
+  · Generador de Banderas integrado
+  · Guía de La Prisión integrada
+  · Mapa de La Prisión integrado
+  · Teclas rápidas configurables (F4–F12 por defecto)
+  · Sistema de actualizaciones automáticas
