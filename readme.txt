@@ -1,5 +1,5 @@
 =====================================================================
-  AriaBot — Guía de Usuario
+  AriaBot v1.4 — Guía de Usuario
   Desarrollado por SMaSeR · 2026
 =====================================================================
 
@@ -56,7 +56,8 @@ La ventana se divide en dos zonas:
   · Botón ⚙ Opciones para configurar las teclas y el idioma.
 
   PANEL DERECHO
-  · Configuración general (intervalo de autoclick, grabación).
+  · Configuración general (intervalo de autoclick, velocidad del ratón,
+    modo one loop, grabación).
   · Imágenes guardadas → gestión de plantillas de reconocimiento.
   · Secuencias de pasos → grabar, editar y ejecutar macros.
   · Log en tiempo real → registro de todas las acciones del programa.
@@ -74,8 +75,14 @@ FUNCIONALIDADES
 
 2. AUTOCLICK CONTINUO (F5 por defecto)
    Realiza clics de forma continua mientras está activo. Configura el
-   intervalo desde el panel de estado. Pulsa de nuevo la tecla para
-   detenerlo.
+   intervalo en la casilla "Intervalo Autoclick (s)" del panel superior.
+   Pulsa de nuevo la tecla para detenerlo.
+
+   BLOQUEAR RATÓN DURANTE AUTOCLICK:
+   Activa la casilla "Bloquear ratón al hacer Autoclick" en el panel
+   de estado para fijar el cursor en la posición de grabación mientras
+   el autoclick está en marcha. Útil cuando otras acciones del sistema
+   puedan desplazar el puntero.
 
 3. LOOP EVASIÓN AFK (F6 por defecto)
    Mueve el personaje de forma aleatoria y periódica para evitar que
@@ -92,7 +99,8 @@ FUNCIONALIDADES
    · Cada paso de la secuencia se puede editar: cambiar el tiempo
      de espera, asignarle una imagen de verificación, reordenar o
      eliminar pasos.
-   · Las secuencias se pueden ejecutar en bucle.
+   · Puedes añadir pausas estáticas entre pasos con el botón
+     "Añadir Pausa Estática" situado junto al botón de ejecución.
 
 5. CAPTURA DE IMAGEN (F8 por defecto)
    Selecciona una región de la pantalla para guardarla como plantilla.
@@ -101,6 +109,8 @@ FUNCIONALIDADES
    antes de ejecutar ese paso. Si no la detecta, puede reintentar o
    saltar el paso según configuración.
    · Pulsa Escape para cancelar la captura sin seleccionar nada.
+   · También puedes importar imágenes PNG externas directamente desde
+     el panel de imágenes guardadas, sin necesidad de capturar pantalla.
 
 6. BANDERAS (F9 por defecto)
    Abre el Generador Maestro de Banderas v6 integrado. Permite crear
@@ -139,6 +149,26 @@ FUNCIONALIDADES
    guardia, secuencias en ejecución. Botón de emergencia.
 
 
+CONFIGURACIÓN GENERAL
+──────────────────────
+En el panel superior derecho encontrarás tres controles independientes:
+
+  INTERVALO AUTOCLICK (s)
+  Escribe directamente el número de segundos entre cada clic del
+  autoclick. Se aplica en tiempo real sin necesidad de reiniciar.
+
+  VELOCIDAD DE DESPLAZAMIENTO DEL MOUSE EN SECUENCIAS
+  Barra deslizante que controla la velocidad de movimiento del ratón
+  durante la ejecución de secuencias. Centrada por defecto (velocidad
+  estándar). Desplaza hacia la izquierda para ir más lento, hacia la
+  derecha para ir más rápido.
+
+  SECUENCIA ONE LOOP
+  Si está marcada, la secuencia activa ejecutará un único ciclo
+  completo y se detendrá sola al terminar. Sin marcar, la secuencia
+  se repite en bucle continuo hasta que la pares manualmente.
+
+
 CONFIGURAR TECLAS RÁPIDAS (⚙ Opciones)
 ────────────────────────────────────────
 Puedes cambiar cualquier tecla rápida por la combinación que prefieras:
@@ -159,10 +189,11 @@ de grabarse en las secuencias, así no interfieren con la automatización.
 
 CAMBIAR IDIOMA (⚙ Opciones)
 ─────────────────────────────
-AriaBot está disponible en Español e Inglés. Para cambiar el idioma:
+AriaBot está disponible en Español, Inglés, Francés e Italiano.
+Para cambiar el idioma:
 
 1. Haz clic en el botón ⚙ Opciones del panel izquierdo.
-2. En la sección IDIOMA / LANGUAGE, selecciona ES o EN.
+2. En la sección IDIOMA / LANGUAGE, selecciona ES, EN, FR o IT.
 3. Haz clic en "Guardar y Aplicar".
 4. Aparecerá un aviso indicando que es necesario reiniciar.
 5. Pulsa "Reiniciar ahora" para aplicar el cambio inmediatamente,
@@ -170,6 +201,14 @@ AriaBot está disponible en Español e Inglés. Para cambiar el idioma:
 
 El idioma elegido queda guardado en settings.json y se aplica
 automáticamente cada vez que arrancas el programa.
+
+
+ASISTENCIA TÉCNICA
+───────────────────
+AriaBot incluye un formulario de contacto integrado accesible desde
+el botón "Asistencia Técnica" en la parte inferior del panel izquierdo.
+Rellena tu nombre, email y descripción del problema y el mensaje se
+enviará directamente al desarrollador.
 
 
 PLATAFORMA CLOUD
@@ -191,8 +230,12 @@ SECUENCIAS — USO AVANZADO
   pulsación de tecla, escritura de texto y esperas temporizadas.
 · Asignar una imagen a un paso hace que el bot verifique que esa
   imagen está visible en pantalla antes de ejecutarlo.
-· Las secuencias se pueden ejecutar en bucle.
-· Puedes añadir pausas estáticas entre pasos desde el panel superior.
+· Las secuencias se pueden ejecutar en bucle continuo o en un único
+  ciclo activando la opción Secuencia one loop.
+· Puedes añadir pausas estáticas entre pasos desde el botón situado
+  junto al botón de ejecución.
+· Puedes importar imágenes PNG externas al panel de plantillas sin
+  necesidad de capturarlas desde pantalla.
 
 
 ARCHIVOS Y CARPETAS GENERADOS
@@ -222,58 +265,10 @@ Si la hay, te preguntará si deseas actualizar. Al aceptar:
   5. Abre el changelog.txt en el Bloc de notas para que veas los cambios.
 No necesitas hacer nada más. Tus secuencias y configuración se conservan.
 
-
-PREGUNTAS FRECUENTES
-─────────────────────
-P: Las teclas rápidas no responden mientras juego.
-R: Asegúrate de ejecutar AriaBot como Administrador. El juego en
-   pantalla completa exclusiva puede bloquear los hooks de teclado;
-   prueba con modo ventana sin bordes.
-
-P: El autoclick hace clic en el sitio equivocado.
-R: Las coordenadas se graban en base a la resolución y posición de
-   la ventana del juego en el momento de la grabación. Si cambias
-   la resolución o mueves la ventana, vuelve a grabar la secuencia.
-
-P: El bot no detecta la imagen capturada.
-R: Asegúrate de que el juego está en la misma resolución que cuando
-   capturaste la imagen. Si la imagen es muy pequeña o cambia mucho
-   de aspecto puede no detectarse.
-
-P: La Guardia no detecta la subida de nivel.
-R: Asegúrate de que el chat del juego es visible en pantalla y de
-   que los mensajes de sistema (en amarillo) no están desactivados.
-   La detección usa OCR sobre una zona del chat, por lo que necesita
-   visibilidad directa.
-
-P: Al actualizar aparece un error de DLL y luego el programa funciona.
-R: Es normal en la primera actualización. El nuevo ejecutable ya
-   incluye la corrección y las siguientes actualizaciones no darán
-   ese aviso.
-
-P: El buscador del mapa no encuentra una sala.
-R: Prueba escribiendo solo parte del nombre (ej: "comedor" en vez de
-   "Comedor Central"). La búsqueda no distingue tildes ni mayúsculas.
-
-P: ¿Dónde se guardan mis secuencias?
-R: En el archivo Secuencias.json dentro de la carpeta de instalación.
-   Puedes hacer copia de seguridad de ese archivo para no perderlas.
-
-P: ¿Puedo cambiar la carpeta de instalación?
-R: Sí, durante la instalación con AriaBot_Setup.exe puedes elegir
-   cualquier carpeta. El programa funcionará igual en cualquier ruta.
-
-P: ¿Cómo cambio el idioma?
-R: En el botón ⚙ Opciones del panel izquierdo, sección IDIOMA /
-   LANGUAGE. Selecciona ES o EN, guarda y reinicia cuando te lo pida.
-
-
 CRÉDITOS
 ─────────
 Guías y recursos del juego proporcionados por:
   www.gentelaprision.es
   — La referencia en español para todo lo relacionado con La Prisión.
-
-Desarrollado por SMaSeR · 2026
 
 =====================================================================

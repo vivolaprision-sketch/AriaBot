@@ -1,6 +1,47 @@
 =====================================================================
   AriaBot — Historial de cambios
 =====================================================================
+──────────────────────────────────────────
+  Versión 1.4
+──────────────────────────────────────────
+  · Añadido idioma Francés
+  · Añadido idioma Italiano
+  · Añadido botón Instrucciones en el panel lateral: abre la guía
+    de usuario en el idioma activo del programa
+  · Eliminado el botón Detener Operaciones del panel lateral
+  · Corrección de bugs
+  · El sistema de actualización descarga ahora todos los archivos
+    de guía de usuario (readme en los 4 idiomas)
+  · Generador de Banderas: ampliados los modos estéticos de 11 a 20,
+    añadidos Kawaii, Yakuza, Vaporwave, Dark Academia, Cottagecore,
+    Y2K, Grunge, Dreamcore y Pirata
+  · Generador de Banderas: el filtro de tipo ocupa ahora dos filas
+    para acomodar los nuevos modos
+  · Generador de Banderas: botón único de generar sustituido por
+    tres botones de cantidad (▶100, ▶200, ▶500, ▶1000)
+  · Generador de Banderas: eliminado el preview en vivo (barra
+    superior); el canvas de previsualización se mantiene interno
+  · Generador de Banderas: botón "Editar" del ensamblador renombrado
+    a "Colorear"
+  · Generador de Banderas: el generador evita ahora variantes
+    visualmente duplicadas mediante control de unicidad por tipo
+  · Generador de Banderas: aumentado el pool de variantes de nick
+    para mejorar la diversidad de resultados
+ · Configuración General rediseñada: el slider genérico de intervalo
+    se sustituye por controles independientes y más precisos
+  · Nuevo campo Intervalo Autoclick (s): casilla de texto donde se
+    escribe directamente el intervalo en segundos para el autoclick
+  · Nueva barra Velocidad de desplazamiento del mouse en secuencias:
+    controla la velocidad de movimiento del ratón durante la ejecución
+    de secuencias; centrada por defecto (velocidad estándar), izquierda
+    más lento, derecha más rápido
+  · Nuevo checkbox Secuencia one loop: si está marcado, la secuencia
+    activa ejecuta un único ciclo completo y se detiene sola; sin marcar
+    funciona en bucle continuo como siempre
+  · Botón Añadir Pausa Estática movido al pie de la card de secuencias,
+    junto al botón Ejecutar Secuencia Activa
+  · Las notificaciones flotantes ya no muestran la tecla rápida entre
+    paréntesis; muestran únicamente el nombre de la acción
 
 ──────────────────────────────────────────
   Versión 1.3
