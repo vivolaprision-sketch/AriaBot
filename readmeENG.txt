@@ -1,5 +1,5 @@
 =====================================================================
-  AriaBot v1.5 — User Guide
+  AriaBot v1.6 — User Guide
   Developed by SMaSeR · 2026
 =====================================================================
 
@@ -65,7 +65,12 @@ The window is split into two areas:
 FEATURES
 ─────────
 
-1. LEVEL GUARD (F4 by default)
+1. RUN / STOP SEQUENCE (F3 by default)
+   Starts the active sequence with its hotkey and stops it when pressed
+   again. The key can be changed in Options and the main button always
+   shows the currently assigned hotkey.
+
+2. LEVEL GUARD (F4 by default)
    Monitors the in-game chat using OCR. When it detects the message
    "HAS SUBIDO DE NIVEL" (level up) in yellow, it stops all active
    functions and closes the game automatically with Alt+F4. This
@@ -73,7 +78,7 @@ FEATURES
    constitution points, which would reduce maximum health.
    Ideal for unattended farming.
 
-2. CONTINUOUS AUTOCLICK (F5 by default)
+3. CONTINUOUS AUTOCLICK (F5 by default)
    Performs continuous clicks while active. Configure the interval
    in the "Autoclick Interval (s)" field in the top panel.
    Press the key again to stop.
@@ -83,11 +88,11 @@ FEATURES
    panel to fix the cursor at the recorded position while autoclick
    is running. Useful when other system actions might move the pointer.
 
-3. AFK EVASION LOOP (F6 by default)
+4. AFK EVASION LOOP (F6 by default)
    Moves the character randomly and periodically to prevent the game
    from disconnecting you due to inactivity. Enable and forget.
 
-4. SEQUENCE RECORDING (F7 by default)
+5. SEQUENCE RECORDING (F7 by default)
    · Press F7 to start recording.
    · Perform the actions you want to automate (clicks, keys,
      waits, mouse movements).
@@ -100,7 +105,7 @@ FEATURES
    · You can add static pauses between steps using the
      "Add Static Pause" button next to the run button.
 
-5. IMAGE CAPTURE (F8 by default)
+6. IMAGE CAPTURE (F8 by default)
    Select a region of the screen to save as a template.
    These images are used as verification conditions in sequence
    steps: the bot checks that the image is on screen before
@@ -110,20 +115,19 @@ FEATURES
    · You can also import external PNG images directly from the
      saved images panel, without capturing the screen.
 
-6. FLAGS (F9 by default)
-   Opens the integrated Master Flag Generator v6. Allows you to
-   create and customise in-game flags with over 500 variants,
-   character-by-character colour editor, nick+frame assembler and
-   direct code export for the game's .inf file.
+7. FLAGS (F9 by default)
+   Opens the integrated Flag Generator. It now includes the original
+   in-game icons and emoticons, RGB colours, gradients and effects,
+   visual editing and quick loading of a flag with a double-click.
 
-7. THE PRISON GUIDE (F10 by default)
+8. THE PRISON GUIDE (F10 by default)
    Opens the complete in-game guide directly inside AriaBot,
    without needing to switch windows. Includes categories for
    Ammo, Cooking, Chemistry, Jewellery, Skills, Clothing,
    Mechanics, Sewing, Carlito-Armor and Levelling Up.
    Credits: www.gentelaprision.es
 
-8. THE PRISON MAP (F11 by default)
+9. THE PRISON MAP (F11 by default)
    Opens the interactive in-game map inside AriaBot with:
    · Zoom with mouse wheel or +/− buttons
    · Drag to navigate the map
@@ -142,7 +146,7 @@ FEATURES
 
    Credits: www.gentelaprision.es
 
-9. STOP ALL (F12 by default)
+10. STOP ALL (F12 by default)
    Immediately stops all active functions: autoclick, AFK, level
    guard, running sequences. Emergency button.
 
@@ -175,7 +179,7 @@ You can change any hotkey to the combination you prefer:
 3. Press the desired key or combination (Ctrl+J, Alt+F, F2, etc.).
 4. If there is a conflict with another action the program will warn you.
 5. Click "Save and Apply" — changes take effect immediately.
-6. "Restore Defaults" resets everything back to F4–F12.
+6. "Restore Defaults" resets everything back to F3–F12.
 
 Configured keys are saved in hotkeys.json and loaded automatically
 every time you start the program.
@@ -186,11 +190,11 @@ recorded in sequences, so they do not interfere with automation.
 
 CHANGE LANGUAGE (⚙ Options)
 ─────────────────────────────
-AriaBot is available in Spanish, English, French and Italian.
+AriaBot is available in Spanish, English, French, Italian, German and Russian.
 To change the language:
 
 1. Click the ⚙ Options button in the left panel.
-2. In the LANGUAGE / IDIOMA section, select ES, EN, FR or IT.
+2. In the LANGUAGE / IDIOMA section, select ES, EN, FR, IT, DE or RU.
 3. Click "Save and Apply".
 4. A notice will appear indicating that a restart is required.
 5. Click "Restart Now" to apply the change immediately,

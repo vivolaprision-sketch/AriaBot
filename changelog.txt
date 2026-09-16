@@ -2,6 +2,17 @@
   AriaBot — Historial de cambios
 =====================================================================
 ──────────────────────────────────────────
+  Versión 1.6
+──────────────────────────────────────────
+  · Mejorado el Generador de Banderas.
+  · Añadidos los iconos y emoticonos originales del juego.
+  · Añadidos nuevos colores, gradientes y efectos para las banderas.
+  · Mejorada la edición de banderas.
+  · Añadida una tecla rápida configurable para ejecutar o detener secuencias.
+  · Mejorado el funcionamiento de secuencias, grabaciones y ventanas.
+  · Mejorada la estabilidad general y corregidos varios errores.
+
+──────────────────────────────────────────
   Versión 1.5
 ──────────────────────────────────────────
   · Añadido idioma Alemán

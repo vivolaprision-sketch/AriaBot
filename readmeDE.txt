@@ -1,5 +1,5 @@
 =====================================================================
-  AriaBot v1.5 — Benutzerhandbuch
+  AriaBot v1.6 — Benutzerhandbuch
   Entwickelt von SMaSeR · 2026
 =====================================================================
 
@@ -68,7 +68,12 @@ Das Fenster ist in zwei Bereiche unterteilt:
 FUNKTIONALITÄTEN
 ────────────────
 
-1. LEVEL-ÜBERWACHUNG (standardmäßig F4)
+1. SEQUENZ STARTEN / STOPPEN (standardmäßig F3)
+   Startet die aktive Sequenz per Hotkey und stoppt sie beim erneuten
+   Drücken. Die Taste kann unter Optionen geändert werden; der Hauptbutton
+   zeigt immer den aktuell zugewiesenen Hotkey.
+
+2. LEVEL-ÜBERWACHUNG (standardmäßig F4)
    Überwacht den Spiel-Chat mittels OCR. Wenn die Meldung 
    "HAS SUBIDO DE NIVEL" (Du bist ein Level aufgestiegen) in Gelb 
    erkannt wird, stoppt es alle aktiven Funktionen und schließt 
@@ -76,7 +81,7 @@ FUNKTIONALITÄTEN
    aufsteigt, ohne Konstitutionspunkte zu vergeben, was die maximale 
    Lebensenergie reduzieren würde. Ideal für unbeaufsichtigtes Farming.
 
-2. KONTINUIERLICHER AUTOKLICK (standardmäßig F5)
+3. KONTINUIERLICHER AUTOKLICK (standardmäßig F5)
    Führt kontinuierlich Klicks aus, solange die Funktion aktiv ist. 
    Konfigurieren Sie das Intervall im Feld "Autoklick-Intervall (s)" 
    im oberen Panel. Drücken Sie die Taste erneut, um es zu stoppen.
@@ -87,11 +92,11 @@ FUNKTIONALITÄTEN
    während der Autoklick läuft. Nützlich, wenn andere Systemaktionen 
    den Zeiger verschieben könnten.
 
-3. AFK-AUSWEICHSCHLEIFE (standardmäßig F6)
+4. AFK-AUSWEICHSCHLEIFE (standardmäßig F6)
    Bewegt den Charakter zufällig und periodisch, um zu verhindern, dass 
    das Spiel Sie aufgrund von Inaktivität trennt. Aktivieren und vergessen.
 
-4. SEQUENZAUFNAHME (standardmäßig F7)
+5. SEQUENZAUFNAHME (standardmäßig F7)
    · Drücken Sie F7, um die Aufnahme zu starten.
    · Führen Sie die Aktionen aus, die Sie automatisieren möchten 
      (Klicks, Tasten, Wartezeiten, Mausbewegungen).
@@ -104,7 +109,7 @@ FUNKTIONALITÄTEN
    · Sie können mit dem Button "Statische Pause hinzufügen" neben dem 
      Ausführungs-Button statische Pausen zwischen den Schritten einfügen.
 
-5. BILDERFASSUNG (standardmäßig F8)
+6. BILDERFASSUNG (standardmäßig F8)
    Wählen Sie einen Bereich des Bildschirms aus, um ihn als Vorlage zu 
    speichern. Diese Bilder werden als Verifizierungsbedingung in den 
    Sequenzschritten verwendet: Der Bot prüft, ob das Bild auf dem 
@@ -115,21 +120,19 @@ FUNKTIONALITÄTEN
    · Sie können externe PNG-Bilder auch direkt über das Panel für 
      gespeicherte Bilder importieren, ohne den Bildschirm zu erfassen.
 
-6. FLAGGEN (standardmäßig F9)
-   Öffnet den integrierten "Generador Maestro de Banderas v6" (Meister-
-   Flaggen-Generator). Ermöglicht das Erstellen und Anpassen von 
-   Spielflaggen mit über 500 Varianten, zeichenweisem Farbeditor, 
-   Nick+Rahmen-Assembler und direktem Export des Codes für die .inf 
-   des Spiels.
+7. FLAGGEN (standardmäßig F9)
+   Öffnet den integrierten Flaggen-Generator. Er enthält jetzt die
+   originalen Spiel-Icons und Emoticons, RGB-Farben, Verläufe und
+   Effekte, visuelle Bearbeitung und schnelles Laden per Doppelklick.
 
-7. LA PRISIÓN GUIDE (standardmäßig F10)
+8. LA PRISIÓN GUIDE (standardmäßig F10)
    Öffnet den kompletten Spiel-Guide direkt in AriaBot, ohne das Fenster 
    wechseln zu müssen. Beinhaltet Kategorien für Munition, Kochen, 
    Chemie, Schmuck, Fertigkeiten, Kleidung, Mechanik, Nähen, 
    Carlito-Coraza und Level-Aufstieg.
    Credits: www.gentelaprision.es
 
-8. LA PRISIÓN KARTE (standardmäßig F11)
+9. LA PRISIÓN KARTE (standardmäßig F11)
    Öffnet die interaktive Karte des Spiels in AriaBot mit:
    · Zoom mit Mausrad oder +/− Buttons
    · Ziehen zur Navigation auf der Karte
@@ -148,7 +151,7 @@ FUNKTIONALITÄTEN
 
    Credits: www.gentelaprision.es
 
-9. ALLES ANHALTEN (standardmäßig F12)
+10. ALLES ANHALTEN (standardmäßig F12)
    Stoppt sofort alle aktiven Funktionen: Autoklick, AFK, Wache, laufende 
    Sequenzen. Notfall-Button.
 
@@ -182,7 +185,7 @@ Sie können jeden Hotkey durch die gewünschte Kombination ersetzen:
 3. Drücken Sie die gewünschte Taste oder Kombination (Strg+J, Alt+F, F2 usw.).
 4. Wenn ein Konflikt mit einer anderen Aktion besteht, warnt Sie das Programm.
 5. Klicken Sie auf "Speichern und Anwenden" — die Änderungen sind sofort aktiv.
-6. Mit "Standard wiederherstellen" setzen Sie auf F4–F12 zurück.
+6. Mit "Standard wiederherstellen" setzen Sie auf F3–F12 zurück.
 
 Die konfigurierten Tasten werden in hotkeys.json gespeichert und bei 
 jedem Start des Programms automatisch geladen.
@@ -193,11 +196,11 @@ Sequenzen aufgezeichnet, damit sie die Automatisierung nicht stören.
 
 SPRACHE ÄNDERN (⚙ Optionen)
 ─────────────────────────────
-AriaBot ist in Spanisch, Englisch, Französisch und Italienisch verfügbar.
+AriaBot ist in Spanisch, Englisch, Französisch, Italienisch, Deutsch und Russisch verfügbar.
 Um die Sprache zu ändern:
 
 1. Klicken Sie auf den ⚙ Optionen-Button im linken Panel.
-2. Wählen Sie im Bereich SPRACHE / LANGUAGE die Option ES, EN, FR oder IT.
+2. Wählen Sie im Bereich SPRACHE / LANGUAGE die Option ES, EN, FR, IT, DE oder RU.
 3. Klicken Sie auf "Speichern und Anwenden".
 4. Ein Hinweis erscheint, dass ein Neustart erforderlich ist.
 5. Drücken Sie "Jetzt neu starten", um die Änderung sofort anzuwenden, 

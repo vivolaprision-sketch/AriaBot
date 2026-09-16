@@ -1,5 +1,5 @@
 =====================================================================
-  AriaBot v1.5 — Guida per l'utente
+  AriaBot v1.6 — Guida per l'utente
   Sviluppato da SMaSeR · 2026
 =====================================================================
 
@@ -66,7 +66,12 @@ La finestra è divisa in due aree:
 FUNZIONALITÀ
 ─────────────
 
-1. GUARDIA ANTI-LIVELLO (F4 per impostazione predefinita)
+1. ESEGUI / ARRESTA SEQUENZA (F3 per impostazione predefinita)
+   Avvia la sequenza attiva con il tasto rapido e la arresta premendolo
+   di nuovo. Il tasto può essere cambiato in Opzioni e il pulsante
+   principale mostra sempre il tasto assegnato.
+
+2. GUARDIA ANTI-LIVELLO (F4 per impostazione predefinita)
    Monitora la chat di gioco tramite OCR. Quando rileva il messaggio
    "HAS SUBIDO DE NIVEL" (salita di livello) in giallo, ferma tutte
    le funzioni attive e chiude il gioco automaticamente con Alt+F4.
@@ -74,7 +79,7 @@ FUNZIONALITÀ
    i punti costituzione, il che ridurrebbe i punti vita massimi.
    Ideale per il farming senza sorveglianza.
 
-2. AUTOCLICK CONTINUO (F5 per impostazione predefinita)
+3. AUTOCLICK CONTINUO (F5 per impostazione predefinita)
    Esegue clic in modo continuo mentre è attivo. Configura l'intervallo
    nel campo "Intervallo Autoclick (s)" nel pannello superiore.
    Premi di nuovo il tasto per fermarlo.
@@ -85,11 +90,11 @@ FUNZIONALITÀ
    l'autoclick è in esecuzione. Utile quando altre azioni di sistema
    potrebbero spostare il puntatore.
 
-3. LOOP EVASIONE AFK (F6 per impostazione predefinita)
+4. LOOP EVASIONE AFK (F6 per impostazione predefinita)
    Muove il personaggio in modo casuale e periodico per evitare che
    il gioco ti disconnetta per inattività. Attiva e dimentica.
 
-4. REGISTRAZIONE SEQUENZE (F7 per impostazione predefinita)
+5. REGISTRAZIONE SEQUENZE (F7 per impostazione predefinita)
    · Premi F7 per avviare la registrazione.
    · Esegui le azioni che vuoi automatizzare (clic, tasti,
      attese, movimenti del mouse).
@@ -102,7 +107,7 @@ FUNZIONALITÀ
    · Puoi aggiungere pause statiche tra i passi con il pulsante
      "Aggiungi Pausa Statica" situato accanto al pulsante di esecuzione.
 
-5. CATTURA IMMAGINE (F8 per impostazione predefinita)
+6. CATTURA IMMAGINE (F8 per impostazione predefinita)
    Seleziona una regione dello schermo per salvarla come modello.
    Queste immagini vengono usate come condizioni di verifica nei passi
    delle sequenze: il bot verifica che l'immagine sia sullo schermo
@@ -112,20 +117,19 @@ FUNZIONALITÀ
    · Puoi anche importare immagini PNG esterne direttamente dal pannello
      delle immagini salvate, senza catturare lo schermo.
 
-6. BANDIERE (F9 per impostazione predefinita)
-   Apre il Generatore Principale di Bandiere v6 integrato. Permette di
-   creare e personalizzare bandiere del gioco con oltre 500 varianti,
-   editor di colori carattere per carattere, assemblatore nick+cornice
-   ed esportazione diretta del codice per il file .inf del gioco.
+7. BANDIERE (F9 per impostazione predefinita)
+   Apre il Generatore di Bandiere integrato. Ora include le icone e
+   le emoticon originali del gioco, colori RGB, gradienti ed effetti,
+   modifica visuale e caricamento rapido con doppio clic.
 
-7. GUIDA DELLA PRIGIONE (F10 per impostazione predefinita)
+8. GUIDA DELLA PRIGIONE (F10 per impostazione predefinita)
    Apre la guida completa del gioco direttamente all'interno di AriaBot,
    senza dover cambiare finestra. Include le categorie Munizioni, Cucina,
    Chimica, Gioielleria, Abilità, Abbigliamento, Meccanica, Cucito,
    Carlito-Corazza e Salita di Livello.
    Crediti: www.gentelaprision.es
 
-8. MAPPA DELLA PRIGIONE (F11 per impostazione predefinita)
+9. MAPPA DELLA PRIGIONE (F11 per impostazione predefinita)
    Apre la mappa interattiva del gioco all'interno di AriaBot con:
    · Zoom con la rotella del mouse o i pulsanti +/−
    · Trascinamento per navigare nella mappa
@@ -145,7 +149,7 @@ FUNZIONALITÀ
 
    Crediti: www.gentelaprision.es
 
-9. FERMA TUTTO (F12 per impostazione predefinita)
+10. FERMA TUTTO (F12 per impostazione predefinita)
    Ferma immediatamente tutte le funzioni attive: autoclick, AFK,
    guardia, sequenze in esecuzione. Pulsante di emergenza.
 
@@ -179,7 +183,7 @@ Puoi cambiare qualsiasi tasto rapido con la combinazione che preferisci:
 3. Premi il tasto o la combinazione desiderata (Ctrl+J, Alt+F, F2…).
 4. Se c'è un conflitto con un'altra azione, il programma ti avviserà.
 5. Clicca "Salva e Applica" — le modifiche sono immediate.
-6. "Ripristina predefiniti" riporta tutto a F4–F12.
+6. "Ripristina predefiniti" riporta tutto a F3–F12.
 
 I tasti configurati vengono salvati in hotkeys.json e caricati
 automaticamente ad ogni avvio del programma.
@@ -191,11 +195,11 @@ l'automazione.
 
 CAMBIARE LINGUA (⚙ Opzioni)
 ─────────────────────────────
-AriaBot è disponibile in Spagnolo, Inglese, Francese e Italiano.
+AriaBot è disponibile in Spagnolo, Inglese, Francese, Italiano, Tedesco e Russo.
 Per cambiare lingua:
 
 1. Clicca il pulsante ⚙ Opzioni nel pannello sinistro.
-2. Nella sezione LINGUA / LANGUAGE, seleziona ES, EN, FR o IT.
+2. Nella sezione LINGUA / LANGUAGE, seleziona ES, EN, FR, IT, DE o RU.
 3. Clicca "Salva e Applica".
 4. Apparirà un avviso che indica che è necessario riavviare.
 5. Clicca "Riavvia ora" per applicare il cambiamento immediatamente,

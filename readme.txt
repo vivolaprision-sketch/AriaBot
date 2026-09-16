@@ -1,5 +1,5 @@
 =====================================================================
-  AriaBot v1.5 — Guía de Usuario
+  AriaBot v1.6 — Guía de Usuario
   Desarrollado por SMaSeR · 2026
 =====================================================================
 
@@ -66,14 +66,19 @@ La ventana se divide en dos zonas:
 FUNCIONALIDADES
 ────────────────
 
-1. GUARDIA ANTI-NIVEL (F4 por defecto)
+1. EJECUTAR / DETENER SECUENCIA (F3 por defecto)
+   Inicia la secuencia activa con la tecla rápida y vuelve a pulsarla
+   para detenerla. La tecla puede cambiarse desde Opciones y el botón
+   principal muestra siempre la tecla asignada.
+
+2. GUARDIA ANTI-NIVEL (F4 por defecto)
    Monitoriza el chat del juego con OCR. Cuando detecta el mensaje
    "HAS SUBIDO DE NIVEL" en amarillo, detiene todas las funciones
    activas y cierra el juego automáticamente. Esto evita que el
    personaje siga subiendo niveles sin aplicar puntos de constitución,
    lo que reduciría su vida máxima. Ideal para farming desatendido.
 
-2. AUTOCLICK CONTINUO (F5 por defecto)
+3. AUTOCLICK CONTINUO (F5 por defecto)
    Realiza clics de forma continua mientras está activo. Configura el
    intervalo en la casilla "Intervalo Autoclick (s)" del panel superior.
    Pulsa de nuevo la tecla para detenerlo.
@@ -84,11 +89,11 @@ FUNCIONALIDADES
    el autoclick está en marcha. Útil cuando otras acciones del sistema
    puedan desplazar el puntero.
 
-3. LOOP EVASIÓN AFK (F6 por defecto)
+4. LOOP EVASIÓN AFK (F6 por defecto)
    Mueve el personaje de forma aleatoria y periódica para evitar que
    el juego te desconecte por inactividad. Actívalo y olvídate.
 
-4. GRABACIÓN DE SECUENCIAS (F7 por defecto)
+5. GRABACIÓN DE SECUENCIAS (F7 por defecto)
    · Pulsa F7 para iniciar la grabación.
    · Realiza las acciones que quieras automatizar (clics, teclas,
      esperas, movimientos de ratón).
@@ -102,7 +107,7 @@ FUNCIONALIDADES
    · Puedes añadir pausas estáticas entre pasos con el botón
      "Añadir Pausa Estática" situado junto al botón de ejecución.
 
-5. CAPTURA DE IMAGEN (F8 por defecto)
+6. CAPTURA DE IMAGEN (F8 por defecto)
    Selecciona una región de la pantalla para guardarla como plantilla.
    Estas imágenes se usan como condición de verificación en los pasos
    de las secuencias: el bot comprobará que la imagen está en pantalla
@@ -112,20 +117,19 @@ FUNCIONALIDADES
    · También puedes importar imágenes PNG externas directamente desde
      el panel de imágenes guardadas, sin necesidad de capturar pantalla.
 
-6. BANDERAS (F9 por defecto)
-   Abre el Generador Maestro de Banderas v6 integrado. Permite crear
-   y personalizar banderas del juego con más de 500 variantes, editor
-   de colores carácter a carácter, ensamblador de nick+marco y
-   exportación directa del código para el .inf del juego.
+7. BANDERAS (F9 por defecto)
+   Abre el Generador de Banderas integrado. Incluye los iconos y
+   emoticonos originales del juego, colores RGB, gradientes y efectos,
+   editor visual y carga rápida de una bandera con doble clic.
 
-7. GUÍA DE LA PRISIÓN (F10 por defecto)
+8. GUÍA DE LA PRISIÓN (F10 por defecto)
    Abre la guía completa del juego directamente dentro de AriaBot,
    sin necesidad de salir ni cambiar de ventana. Incluye categorías
    de Municiones, Cocina, Química, Joyería, Habilidades, Prendas,
    Mecánica, Costura, Carlito-Coraza y Subir de Nivel.
    Créditos: www.gentelaprision.es
 
-8. MAPA DE LA PRISIÓN (F11 por defecto)
+9. MAPA DE LA PRISIÓN (F11 por defecto)
    Abre el mapa interactivo del juego dentro de AriaBot con:
    · Zoom con rueda del ratón o botones +/−
    · Arrastre para navegar por el mapa
@@ -144,7 +148,7 @@ FUNCIONALIDADES
 
    Créditos: www.gentelaprision.es
 
-9. DETENER TODO (F12 por defecto)
+10. DETENER TODO (F12 por defecto)
    Para inmediatamente todas las funciones activas: autoclick, AFK,
    guardia, secuencias en ejecución. Botón de emergencia.
 
@@ -178,7 +182,7 @@ Puedes cambiar cualquier tecla rápida por la combinación que prefieras:
 3. Pulsa la tecla o combinación deseada (Ctrl+J, Alt+F, F2, etc.).
 4. Si hay conflicto con otra acción el programa te avisará.
 5. Haz clic en "Guardar y Aplicar" — los cambios son inmediatos.
-6. Con "Restaurar por defecto" vuelves a F4–F12.
+6. Con "Restaurar por defecto" vuelves a F3–F12.
 
 Las teclas configuradas quedan guardadas en hotkeys.json y se cargan
 automáticamente cada vez que arrancas el programa.
@@ -189,11 +193,11 @@ de grabarse en las secuencias, así no interfieren con la automatización.
 
 CAMBIAR IDIOMA (⚙ Opciones)
 ─────────────────────────────
-AriaBot está disponible en Español, Inglés, Francés e Italiano.
+AriaBot está disponible en Español, Inglés, Francés, Italiano, Alemán y Ruso.
 Para cambiar el idioma:
 
 1. Haz clic en el botón ⚙ Opciones del panel izquierdo.
-2. En la sección IDIOMA / LANGUAGE, selecciona ES, EN, FR o IT.
+2. En la sección IDIOMA / LANGUAGE, selecciona ES, EN, FR, IT, DE o RU.
 3. Haz clic en "Guardar y Aplicar".
 4. Aparecerá un aviso indicando que es necesario reiniciar.
 5. Pulsa "Reiniciar ahora" para aplicar el cambio inmediatamente,
