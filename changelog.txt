@@ -25,7 +25,7 @@
   · Añadido ReadmeDE.txt y documentación actualizada
   · Añadido ReadmeRU.txt y documentación actualizada
   · Modificado el sistema de banderas para que se muestren mas rápido y limpias además de corrección de bugs
-  · Ahora deberían aparecer los readme en distintos idiomas correctamente en la carpeta
+  · Ahora deberían aparecer los readme en distintos idiomas correctamente en la carpeta.
 
 ──────────────────────────────────────────
   Versión 1.4
