@@ -2,6 +2,14 @@
   AriaBot — Historial de cambios
 =====================================================================
 ──────────────────────────────────────────
+  Versión 1.7.2
+──────────────────────────────────────────
+  · Corrección del relanzamiento tras actualización automática en EXE PyInstaller onefile.
+  · El nuevo proceso inicia con un entorno PyInstaller independiente, sin reutilizar _MEI anterior.
+  · La sincronización de documentación no retrocede una candidata a la versión pública anterior.
+  · Sin cambios en las funciones de automatización, secuencias ni configuraciones.
+
+──────────────────────────────────────────
   Versión 1.7.1
 ──────────────────────────────────────────
   · Publicación final de la revisión 1.7, con Autoturno y optimizaciones de reconocimiento visual.
