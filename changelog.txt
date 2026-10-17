@@ -2,6 +2,21 @@
   AriaBot — Historial de cambios
 =====================================================================
 ──────────────────────────────────────────
+  Versión 1.7.1
+──────────────────────────────────────────
+  · Publicación final de la revisión 1.7, con Autoturno y optimizaciones de reconocimiento visual.
+  · Identificación de versión, manifiesto y compilación alineados en 1.7.1.
+
+──────────────────────────────────────────
+  Versión 1.7
+──────────────────────────────────────────
+  · Autoturno por imagen ATAQUES integrada: espera inicial de 0,30 s y repeticiones cada 6 s, solo si la imagen permanece visible.
+  · Biblioteca de secuencias, imágenes y mini secuencias organizada con carpetas arrastrables.
+  · Secuenciador, grabación de mini secuencias, diagnóstico y mejoras de fiabilidad e interfaz.
+  · Motor OCR, perfiles, HUD y herramientas experimentales documentados según sus respectivos niveles de validación.
+  · Compatibilidad con datos personales y secuencias guardadas de versiones anteriores.
+
+──────────────────────────────────────────
   Versión 1.6
 ──────────────────────────────────────────
   · Mejorado el Generador de Banderas.
